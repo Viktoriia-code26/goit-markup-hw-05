@@ -548,6 +548,9 @@ display: flex;
         display: inline-flex;
         gap: 16px;
 }
+.form-submit-icon {
+    fill:#f4f4fd;
+}
 .modal-overlay {
     background-color: rgba(0, 0, 0, 0.5);
     position: fixed;
@@ -648,8 +651,9 @@ display: flex;
     background: #4d5ae5;
     cursor: pointer;
     display: block;
-    margin-left: auto;
     margin-right: auto;
+    margin-bottom: 24px;
+    margin-left: auto;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
