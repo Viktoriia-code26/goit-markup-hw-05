@@ -533,6 +533,7 @@ display: flex;
     font-size: 12px;
     line-height: 2;
     letter-spacing: 0.04em;
+    padding-left: 16px;
     color: #ffffff;
     background-color: transparent;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
@@ -595,7 +596,6 @@ display: flex;
     border-radius: 50%;
     display: flex;
     border: 1px;
-    border-color:rgba(0, 0, 0, 0.1);
     position: absolute;
     top: 24px;
     right: 24px;
@@ -604,6 +604,7 @@ display: flex;
     background-color:  #e7e9fc;
     width: 24px;
     height: 24px;
+    border: 1px solid rgba(0, 0, 0, 0.1)
     padding: 0;
     outline: none;
     cursor: pointer;
@@ -613,13 +614,10 @@ display: flex;
 .button-close:focus {
     background-color:  #404bbf;
     border: none;
+    fill: #ffffff;
 }
 .modal-close {
 transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1)
-}
-.modal-close:hover,
-.modal-close:focus {
-    fill: #ffffff;
 }
 .modal-text {
     font-weight: 500;
@@ -645,7 +643,7 @@ transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1)
     width: 100%;
     height: 40px;
     padding-left: 38px;
-    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .form-modal-box {
     position: relative;
@@ -678,7 +676,7 @@ transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1)
     color: #ffffff;
     border-radius: 4px;
     padding: 16px 32px;
-    width: 169px;
+    min-width: 169px;
     height: 56px;
     background: #4d5ae5;
     cursor: pointer;
@@ -702,8 +700,9 @@ transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1)
     padding: 8px 16px;
     resize: none;
     font-size: 12px; 
-    line-height: 1,17;  
-    letter-spacing: 0,04; 
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    outline: transparent;
     color: rgba(46, 47, 66, 0.4);
     background-color: transparent;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
